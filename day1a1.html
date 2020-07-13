@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>day-1 assignment-1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myDate =new Date();
+            var myDay = myDate.getDay();
+            var days = ['Sunday.','Monday.','Tuesday.','Wednesday.','Thursday.','Friday.','Saturday.'];
+            document.write("Today is : "+days[myDay]);
+            document.write("</br>");
+            var hour = myDate.getHours();
+            var ampm = hour>=12 ? 'PM':'AM';
+            hour=hour%12;
+            hour=hour?hour:12;
+            var minute = myDate.getMinutes();
+            minute = minute<10 ? '0'+ minute : minute;
+            var myTime = hour +" "+ampm+" : "+minute+" : "+myDate.getSeconds();
+            document.write("Current time is : "+myTime);
+        </script>
+    </body>
+</html>
