@@ -1,0 +1,10 @@
+.container{
+ height:300px;
+ width:100%;   
+}
+
+#display{
+    width:100%;
+    font-size:75px;
+    text-align:center;
+}
